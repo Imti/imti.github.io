@@ -9,16 +9,16 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>imti</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>imti</h1>
+      <main className="main">
+        <h1 className="title">imti</h1>
 
-        <p className={styles.description}>Experiments with code</p>
+        <p className="description">Experiments with code</p>
 
         <div className={styles.separator}>
           <svg
@@ -39,20 +39,20 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className={styles.grid}>
-          <a href="/confetti" className={styles.card}>
+        <div className="grid">
+          <a href="/confetti" className="card">
             <h3>Confetti &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="/color-blending" className={styles.card}>
+          <a href="/color-blending" className="card">
             <h3>Color Blending &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="/clock" className={styles.card}>
+          <a href="/clock" className="card">
             <h3>Clock &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="/thing-4" className={styles.card}>
+          <a href="/thing-4" className="card">
             <h3>Thing 4 &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>

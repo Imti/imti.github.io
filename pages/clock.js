@@ -148,10 +148,10 @@ export default function Clock() {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Clock</h1>
-        <p className={styles.description}>Using SVG and D3 </p>
+    <div className="container">
+      <main className="main">
+        <h1 className="title">Clock</h1>
+        <p className="description">Using SVG and D3</p>
         <div className="chart"></div>
       </main>
     </div>

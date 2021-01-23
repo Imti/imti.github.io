@@ -9,14 +9,14 @@ export default function Confetti() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>imti | Confetti</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Confetti</h1>
-        <p className={styles.description}>Using the canvas-confetti package</p>
+      <main className="main">
+        <h1 className="title">Confetti</h1>
+        <p className="description">Using the canvas-confetti package</p>
         <button className={styles.button} onClick={() => confetti()}>
           Again 🎉
         </button>
