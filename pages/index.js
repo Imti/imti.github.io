@@ -1,65 +1,63 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import confetti from 'canvas-confetti';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    confetti();
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>imti</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>imti</h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <p className={styles.description}>Experiments with code</p>
+
+        <div className={styles.separator}>
+          <svg
+            preserveAspectRatio="xMaxYMax"
+            width="1440"
+            height="205"
+            viewBox="0 0 1440 70"
+          >
+            <path d="M456.464 0.0433865C277.158 -1.70575 0 50.0141 0 50.0141V74H1440V50.0141C1440 50.0141 1320.4 31.1925 1243.09 27.0276C1099.33 19.2816 1019.08 53.1981 875.138 50.0141C710.527 46.3727 621.108 1.64949 456.464 0.0433865Z"></path>
+            <text className={styles.bikeEmoji}>
+              🚴‍♂️
+              <animateMotion
+                dur="10s"
+                repeatCount="indefinite"
+                path="M456.464 0.0433865C277.158 -1.70575 0 50.0141 0 50.0141V74H1440V50.0141C1440 50.0141 1320.4 31.1925 1243.09 27.0276C1099.33 19.2816 1019.08 53.1981 875.138 50.0141C710.527 46.3727 621.108 1.64949 456.464 0.0433865Z"
+              />
+            </text>
+          </svg>
+        </div>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
+          <a href="/confetti" className={styles.card}>
+            <h3>Confetti &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/color-blending" className={styles.card}>
+            <h3>Color Blending &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
           </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="/clock" className={styles.card}>
+            <h3>Clock &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
           </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="/thing-4" className={styles.card}>
+            <h3>Thing 4 &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }

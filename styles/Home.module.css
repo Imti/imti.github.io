@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -14,6 +15,55 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.separator {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 205px;
+  transform: translateY(1px);
+  z-index: 3;
+}
+
+.separator svg {
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: 0;
+  width: 110%;
+  fill: cadetblue;
+}
+
+.bikeEmoji {
+  font-size: 3.5em;
+  animation: flip 10s infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
+  }
+
+  17% {
+    transform: rotateY(0);
+  }
+
+  18% {
+    transform: rotateY(180deg);
+  }
+
+  67% {
+    transform: rotateY(180deg);
+  }
+
+  68% {
+    transform: rotateY(0);
+  }
 }
 
 .footer {
@@ -60,6 +110,7 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  color: #888;
 }
 
 .code {
