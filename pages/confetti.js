@@ -11,12 +11,12 @@ export default function Confetti() {
   return (
     <div className="container">
       <Head>
-        <title>imti | Confetti</title>
+        <title>imti | confetti</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
-        <h1 className="title">Confetti</h1>
-        <p className="description">Using the canvas-confetti package</p>
+        <h1 className="title">confetti</h1>
+        <p className="description">using canvas-confetti package</p>
         <button className={styles.button} onClick={() => confetti()}>
           Again 🎉
         </button>

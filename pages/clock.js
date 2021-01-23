@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import * as d3 from 'd3';
 import { useEffect } from 'react';
 import styles from '../styles/Clock.module.css'
@@ -149,9 +150,13 @@ export default function Clock() {
 
   return (
     <div className="container">
+      <Head>
+        <title>imti | clock</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main className="main">
-        <h1 className="title">Clock</h1>
-        <p className="description">Using SVG and D3</p>
+        <h1 className="title">clock</h1>
+        <p className="description">Using svg + d3</p>
         <div className="chart"></div>
       </main>
     </div>

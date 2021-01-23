@@ -14,12 +14,12 @@ export default function SVGColorBlending() {
   return (
     <div className="container">
       <Head>
-        <title>imti | Color Blending</title>
+        <title>imti | color blending</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
-        <h1 className="title">Color Blending</h1>
-        <p className="description">Using SVG text and mix blend mode </p>
+        <h1 className="title">color blending</h1>
+        <p className="description">using svg + mix blend mode</p>
         <svg className={styles.svg} viewBox={`0 0 ${height} ${width}`}>
           <clipPath id="textClip" className={styles["filled-heading"]}>
             <text y="90" x="50%">
