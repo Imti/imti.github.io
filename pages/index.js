@@ -50,7 +50,7 @@ export default function Home() {
             </a>
             <a href="/color-blending" className="card">
               <h3>color blending &rarr;</h3>
-              <p>using svg + mix blend mode mode</p>
+              <p>using svg + mix blend mode</p>
             </a>
             <a href="/clock" className="card">
               <h3>clock &rarr;</h3>
