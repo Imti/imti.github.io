@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import confetti from 'canvas-confetti';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Fade } from 'react-reveal';
 
 export default function Home() {
   useEffect(() => {
-    confetti();
+    setTimeout(confetti, 800);
   }, []);
 
   return (
@@ -16,10 +17,12 @@ export default function Home() {
       </Head>
 
       <main className="main">
-        <h1 className="title">imti</h1>
-
-        <p className="description">Experiments with code</p>
-
+        <Fade bottom duration={600}>
+          <h1 className="title">imti</h1>
+        </Fade>
+        <Fade bottom delay={200} duration={600}>
+          <p className="description">Experiments with code</p>
+        </Fade>
         <div className={styles.separator}>
           <svg
             preserveAspectRatio="xMaxYMax"
@@ -39,24 +42,26 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="grid">
-          <a href="/confetti" className="card">
-            <h3>Confetti &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-          <a href="/color-blending" className="card">
-            <h3>Color Blending &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-          <a href="/clock" className="card">
-            <h3>Clock &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-          <a href="/thing-4" className="card">
-            <h3>Thing 4 &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-        </div>
+        <Fade bottom cascade delay={200} duration={600}>
+          <div className="grid">
+            <a href="/confetti" className="card">
+              <h3>Confetti &rarr;</h3>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+            <a href="/color-blending" className="card">
+              <h3>Color Blending &rarr;</h3>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+            <a href="/clock" className="card">
+              <h3>Clock &rarr;</h3>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+            <a href="/thing-4" className="card">
+              <h3>Thing 4 &rarr;</h3>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+          </div>
+        </Fade>
       </main>
     </div>
   );
