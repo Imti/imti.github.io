@@ -26,6 +26,10 @@ a {
   align-items: center;
 }
 
+.container.dark-bg {
+  background: black;
+}
+
 .main {
   padding: 5rem 0;
   flex: 1;

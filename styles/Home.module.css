@@ -9,6 +9,7 @@
   height: 205px;
   transform: translateY(1px);
   z-index: 3;
+  pointer-events: none;
 }
 
 .separator svg {

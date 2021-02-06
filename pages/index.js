@@ -56,9 +56,9 @@ export default function Home() {
               <h3>clock &rarr;</h3>
               <p>using svg + d3</p>
             </a>
-            <a href="/thing-4" className="card">
-              <h3>thing 4 &rarr;</h3>
-              <p>next experiment with code</p>
+            <a href="/particles" className="card">
+              <h3>particles &rarr;</h3>
+              <p>image + threejs</p>
             </a>
           </div>
         </Fade>
